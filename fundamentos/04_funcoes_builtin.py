@@ -1,0 +1,6 @@
+name = input("Digite seu nome completo: ")
+age = int(input("Digite sua idade: "))
+print(f"Seu nome é {name} e você tem {age} anos de idade.")
+print(name, age)
+print(name, age, end="...\n")
+print(name, age, sep="#")
