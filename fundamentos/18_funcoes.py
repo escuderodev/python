@@ -2,9 +2,9 @@ print("\n=== Testando a função exibir_mensagem() ===")
 def exibir_mensagem(mensagem):
     print(f"\n=== {mensagem} ===")
     
-def soma(num1, num2):
+def somar(num1, num2):
     exibir_mensagem("Testando a função soma()")
-    print(f"{num1} + {num2} = {num1 + num2}")
+    return num1 + num2
     
 def tabuada(multiplicador):
     exibir_mensagem("Testando a função tabuada()")
@@ -26,16 +26,22 @@ def retorna_antecessor_e_sucessor(numero):
     return antecessor, sucessor
 
 def subtrair(num1, num2):
+    exibir_mensagem("Testando a função subtrair()")
     return num1 - num2
 
 def calcular_idade(ano_atual, ano_nascimento, function):
     exibir_mensagem("Testando a função calcular_idade()")
     resultado = function(ano_atual,ano_nascimento)
     print(f"{ano_atual} - {ano_nascimento} = {resultado}")
+    
+def calculadora(num1, num2, function):
+    resultado = function(num1, num2)
+    print(resultado)
         
 exibir_mensagem("Palmeiras não tem mundial!")
-soma(10, 5)
 tabuada(7)
 sacar(498)
 print(retorna_antecessor_e_sucessor(5))
 calcular_idade(2024, 1984, subtrair)
+calculadora(10,5,somar)
+calculadora(10,5,subtrair)
