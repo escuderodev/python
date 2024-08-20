@@ -15,7 +15,7 @@ print(list(range(4)))
 print(list(range(0,11)))
 
 # === for clássico + range() ===
-print("\n=== tabuado com for clássico + range() ===")
+print("\n=== tabuada com for clássico + range() ===")
 multiplicador = 2
 
 for contador in range(0,11):
