@@ -24,9 +24,18 @@ def retorna_antecessor_e_sucessor(numero):
     antecessor = numero - 1
     sucessor = numero + 1
     return antecessor, sucessor
+
+def subtrair(num1, num2):
+    return num1 - num2
+
+def calcular_idade(ano_atual, ano_nascimento, function):
+    exibir_mensagem("Testando a função calcular_idade()")
+    resultado = function(ano_atual,ano_nascimento)
+    print(f"{ano_atual} - {ano_nascimento} = {resultado}")
         
 exibir_mensagem("Palmeiras não tem mundial!")
 soma(10, 5)
 tabuada(7)
 sacar(498)
 print(retorna_antecessor_e_sucessor(5))
+calcular_idade(2024, 1984, subtrair)
