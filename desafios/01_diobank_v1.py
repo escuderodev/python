@@ -46,10 +46,10 @@ def exibir_menu():
         opcao = input("\nDigite D para Depósito, S para Saque, E para Extrato ou Q para Sair: ")
         
         if opcao.upper() == "D":
-            valor = int(input("Digite o valor do depósito R$: "))
+            valor = float(input("Digite o valor do depósito R$: "))
             depositar(valor)
         elif opcao.upper() == "S":
-            valor = int(input("Digite o valor do saque R$: "))
+            valor = float(input("Digite o valor do saque R$: "))
             sacar(valor)
         elif opcao.upper() == "E":
             gera_extrato()
