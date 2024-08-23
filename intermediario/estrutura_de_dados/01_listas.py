@@ -1,5 +1,7 @@
 def exibir_mensagem(mensagem):
-    print(f"\n=== {mensagem} ===")
+    print(f"""
+          \n===== {mensagem} =====
+          """)
 
 exibir_mensagem("Acessando uma posição da lista")
 nomes = ["Eduardo", "Carol", "Juan", "Alícia"]
