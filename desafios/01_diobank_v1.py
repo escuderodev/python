@@ -40,7 +40,11 @@ def gera_extrato():
     print(f"Saldo atual R$: {saldo:.2f}")
     
 def exibir_menu():
-    print("\n=== Bem vindo ao DioBank ===")
+    print("""
+          ============================
+          === Bem vindo ao DioBank ===
+          ============================
+          """)
     
     while True:
         opcao = input("\nDigite D para Depósito, S para Saque, E para Extrato ou Q para Sair: ")
