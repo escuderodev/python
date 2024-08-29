@@ -31,6 +31,10 @@ class Bicicleta:
     
     # def __str__(self):
     #     return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
+    
+    def __del__(self):
+        print("Removendo a instãncia da classe...")
+        # metodo declarado apenas quando quisermos fazer algo antes que o objeto seja destruído
         
 speed = Bicicleta("Preta", "Speed", 2024, 2500.00)
 print(speed)
