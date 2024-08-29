@@ -4,10 +4,7 @@ class Bicicleta:
         self.modelo = modelo
         self.ano = int(ano)
         self.valor = float(valor)
-        
-    def detalhar(self):
-        print(f"\nModelo: {self.modelo} | Cor: {self.cor} | Ano de Fabricação: {self.ano} | Valor R$: {self.valor:.2f}")
-        
+            
     def businar(self):
         print("Bicileta businando...")
     
@@ -30,10 +27,13 @@ class Bicicleta:
         return self.valor
     
     def __str__(self):
-        return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
+        return f"Bicicleta - Modelo: {self.modelo} | Cor: {self.cor} | Ano de Fabricação: {self.ano} | Valor R$: {self.valor:.2f}"
+    
+    # def __str__(self):
+    #     return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
         
 speed = Bicicleta("Preta", "Speed", 2024, 2500.00)
-speed.detalhar()
+print(speed)
 speed.businar()
 speed.correr()
 speed.parar()
@@ -41,4 +41,3 @@ print(speed.get_modelo())
 print(speed.get_cor())
 print(speed.get_ano())
 print(f"{speed.get_valor():.2f}")
-print(speed.__str__())
