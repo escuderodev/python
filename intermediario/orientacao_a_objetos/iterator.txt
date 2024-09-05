@@ -1,0 +1,10 @@
+este
+é
+um
+teste
+de
+iteração
+com
+arquivo
+via
+python
