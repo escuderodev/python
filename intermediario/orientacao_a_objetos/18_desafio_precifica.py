@@ -68,7 +68,8 @@ class Produto:
             print(f"Nome do Insumo: {insumo['nome_insumo']}")
             print(f"Valor Unitário: R$ {insumo['valor_unitario']:.2f}")
             print(f"Quantidade: {insumo['quantidade']}\n")
-        print(f"====== Valor R$: {self.valor:.2f} ======")
+        print(f"====== Preço de Produção R$: {self.valor:.2f} ======")
+        print(f"====== preço Sugerido R$: {self._preco_sugerido:.2f} ======")
 
     def __str__(self):
         return f"""
