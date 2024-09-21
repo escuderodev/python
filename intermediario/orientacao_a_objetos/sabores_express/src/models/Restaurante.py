@@ -51,4 +51,7 @@ class Restaurante:
     def listar_cardapio(self):
         print(f'=== Cardápio do Restaurante {self._nome} ===')
         for index, item in enumerate(self._cardapio, start=1):
-            print(f'{index}. {item}')
+            if hasattr(item, '_descricao'):
+                print(f'{index}. Prato: {item}')
+            else:
+                print(f'{index}. Bebida: {item}')

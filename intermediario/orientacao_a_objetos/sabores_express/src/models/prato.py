@@ -10,4 +10,4 @@ class Prato(ItemCardapio):
         return self._descricao
         
     def __str__(self) -> str:
-        return f'Prato: {self._nome} - Descrição: {self._descricao} - R$ {self._preco:.2f}'
+        return f'{self._nome} - Descrição: {self._descricao} - R$ {self._preco:.2f}'
