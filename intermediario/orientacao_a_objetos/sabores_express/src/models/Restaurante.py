@@ -1,4 +1,5 @@
 from models.avaliacao import Avaliacao
+from models.item_cardapio import ItemCardapio
 
 class Restaurante:
     restaurantes = []
@@ -42,9 +43,12 @@ class Restaurante:
         return media
 
     def adicionar_item_ao_cardapio(self, item):
-        self._cardapio.append(item)
-        
+        if isinstance(item, ItemCardapio):
+            self._cardapio.append(item)
+        else:
+            print('Este item não pôde ser incluído!')
+    
     def listar_cardapio(self):
-        print('=== Nosso Cardápio ===')
-        for item in self._cardapio:
-            print(f'- {item}')
+        print(f'=== Cardápio do Restaurante {self._nome} ===')
+        for index, item in enumerate(self._cardapio, start=1):
+            print(f'{index}. {item}')

@@ -14,7 +14,6 @@ restaurante.adicionar_item_ao_cardapio(prato)
 # executando a aplicação
 def main():
     print()
-    print(restaurante)
     restaurante.listar_cardapio()
 
 if __name__ == '__main__':
