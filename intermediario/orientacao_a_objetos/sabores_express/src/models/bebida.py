@@ -14,5 +14,9 @@ class Bebida(ItemCardapio):
     def unidade_medida(self):
         return self._unidade_medida
     
+    def aplicar_desconto(self):
+        desconto = (self._preco / 100) * 8
+        return self._preco - desconto
+    
     def __str__(self) -> str:
         return f'{self._nome} - Tamanho: {self._tamanho}{self._unidade_medida} - R$: {self._preco:.2f}'

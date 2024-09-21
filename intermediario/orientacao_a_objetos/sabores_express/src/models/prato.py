@@ -8,6 +8,10 @@ class Prato(ItemCardapio):
     @property
     def descricao(self):
         return self._descricao
+    
+    def aplicar_desconto(self):
+        desconto = (self._preco / 100) * 5
+        return self._preco - desconto
         
     def __str__(self) -> str:
         return f'{self._nome} - Descrição: {self._descricao} - R$ {self._preco:.2f}'
