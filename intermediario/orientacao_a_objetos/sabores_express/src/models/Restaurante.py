@@ -53,5 +53,7 @@ class Restaurante:
         for index, item in enumerate(self._cardapio, start=1):
             if hasattr(item, '_descricao'):
                 print(f'{index}. Prato: {item}')
+            elif hasattr(item, '_tipo'):
+                print(f'{index}. Sobremesa: {item}')
             else:
                 print(f'{index}. Bebida: {item}')
