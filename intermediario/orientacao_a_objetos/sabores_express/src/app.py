@@ -8,8 +8,8 @@ prato = Prato("Parmeggiana de Carne", 80.00, "Parmeggiana de Carne coberto com Q
 bebida = Bebida("Coca Cola", 7.50, 350, "ML")
 
 # adicionando itens ao cardápio
-restaurante.adicionar_bebida_ao_cardapio(bebida)
-restaurante.adicionar_prato_ao_cardapio(prato)
+restaurante.adicionar_item_ao_cardapio(bebida)
+restaurante.adicionar_item_ao_cardapio(prato)
 
 # executando a aplicação
 def main():
