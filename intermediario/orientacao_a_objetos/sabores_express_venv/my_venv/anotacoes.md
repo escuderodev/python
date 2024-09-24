@@ -14,4 +14,12 @@
     - pip install requests
 - para verificar as libs instaladas na venv use -> pip freeze
 - para criar um arquivo com as libs instaladas use -> pip freeze > requirements.txt
-- 
+- para expor os dados coletados criaremos uma api e para isso devemos instalar as libs abaixo:
+    - fastapi -> pip install fastapi
+    - uvicorn -> pip install uvicorn
+- atualizar o arquivo de dependência -> pip freeze > requirements.txt
+- criar arquivo main.py
+- em main.py, importar FastApi
+- criar instância de FastAPI
+- criar rota
+- na raiz do projeto, iniciar server com -> uvicorn main:server --reload
