@@ -6,12 +6,18 @@ server = FastAPI()
 # modo de requisição: http://127.0.0.1:8000/
 @server.get('/')
 def hello_world():
+    '''
+    Endponint de entrada da API.
+    '''
     return {'message': 'Bem vindo a minha API com FastApi e Python'}
     
 # mode de requisição: http://127.0.0.1:8000/api/restaurantes/
 # mode de requisição: http://127.0.0.1:8000/api/restaurantes/?restaurante=KFC
 @server.get('/api/restaurantes/')
 def get_restaurantes(restaurante: str = Query(None)):
+    '''
+    Endpoint que exibe todos os restaurantes, mas também permite buscar por nome do restaurante.
+    '''
     url = 'https://guilhermeonrails.github.io/api-restaurantes/restaurantes.json'
     response = requests.get(url) 
 
