@@ -11,4 +11,14 @@
     - pip freeze > requirements.txt
     - devemos atualizar o arquivo requirements sempre que uma nova dependência for instalada
 - iniciar projeto django: django-admin startproject setup .
--  
+- iniciar o server: python manage.py runserver 
+- para ajustar linguagem padrão e timezone, acesse o arquivo 'setup/settings.py'
+- para criar variáveis de ambiente utilizamos o pacote dotenv.
+    - instalar: pip install python-dotenv
+- mover todas as variáveis de ambiente para o arquivo .env
+- em settings.py, importar OS e dotenv da seguinte forma:
+    - from pathlib import Path, os
+    - from dotenv import load_dotenv
+- em settings.py, carregar variáveis de ambiente: load_dotenv()
+- utilizar as chaves dotenv: SECRET_KEY = str(os.getenv('SECRET_KEY'))
+- 
